@@ -106,12 +106,11 @@ Hmmm... I thought `for (auto i : rng);` was equivalent to something that compare
 But in the above example, `intstream` cannot have an end iterator!
 From what I've gathered [online](https://stackoverflow.com/q/32900557), a view uses a 'sentinel' in place of an end iterator.
 A sentinel is like an end iterator but is allowed to have a type that is not an iterator type.
-By overriding the equality operator between a sentinel and iterator it is possible to check whether an iterator is at the end of a range without knowing the exact length of the range.
+By overriding the equality operator between a sentinel and iterator, it is possible to check whether an iterator is at the end of a range without knowing the position of the last element in the range.
 Presumably, view adaptors like `take_while(lambda)` allow you to specify this comparison function directly.
-This also implies that calculating the length of a range, with `rs::distance` may be expensive.
 
 One last note.
-If you write code using range-v3 you may find that the compiler's output is difficult to understand.
+If you write code using range-v3 you may find that the compiler's error messages are difficult to understand.
 One reason for this is because ranges-v3 emulates concepts through a mixture of macros and template metaprogramming.
 So when things fail, the error messages have to do with things deep in the library's implementation.
 Hopefully std::ranges will be able to make use of non-emulated concepts to fail in a more graceful way.
@@ -125,7 +124,10 @@ Here are a few links I found useful while learning about ranges.
   * [The Surprising Limitations of C++ Ranges Beyond Trivial Cases](https://www.fluentcpp.com/2019/09/13/the-surprising-limitations-of-c-ranges-beyond-trivial-use-cases/)
   * [The Range-v3 User Manual](https://ericniebler.github.io/range-v3/)
 
+
+
 <h1>Extra Stuff</h1>
+
 
 I did not add this example since I am not sure it is a fair comparison.
 
@@ -161,3 +163,4 @@ I did not add this example since I am not sure it is a fair comparison.
     }, X, W);
 
 I also wrote a function with ranges that swaps the first and last dimension of an arbitrary tensor (n dimensional matrix). I did not include it in the rough draft since it is more of the same `drop`,`stride`,`chunk` that I've already shown in `transpose`.
+
