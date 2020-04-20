@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Writing A Transpose Function With Range-v3"
+title: "Implementing A Matrix Transpose With Range-v3"
 date: 2020-04-20
 author: Bradley Bauer
 ---
@@ -35,11 +35,11 @@ auto x = ints(1,5+1);
 print(x); // [1,2,3,4,5]
 print(x | drop(2)); // [3,4,5]
 print(x | stride(2)); // [1,3,5]
-print(x | transform([](auto xi){ return 2*xi; })); // [2,4,6,8,10]
 print2D(x | chunk(2)); // [1,2]
                        // [3,4]
                        // [5]
 print(x | chunk(2) | join); // [1,2,3,4,5]
+print(x | transform([](auto xi){ return 2*xi; })); // [2,4,6,8,10]
 
 auto y = std::vector{ 1, 2, 3, 4 };
 print(rs::inner_product(x, y, -.5)); // 29.5
@@ -79,7 +79,7 @@ print2D(transpose(W));
 ```
 The inner lambda captures by value because it does not execute until after the rng variable has been destroyed.
 
-Unfortunately, this does not compile. Clang gives errors that suggest `flat` does not satisfy the range concept. We can check this directly using a static_assert in the lambda.i
+Unfortunately, this does not compile. Clang gives errors that suggest `flat` does not satisfy the range concept. We can check this directly using a static_assert in the inner lambda.
 ```cpp
 static_assert(!rs::range<decltype(flat)>, "i compile");
 ```
@@ -106,12 +106,12 @@ But in the above example, `intstream` cannot have an end iterator!
 From what I've gathered [online](https://stackoverflow.com/q/32900557), a view uses a 'sentinel' in place of an end iterator.
 A sentinel is like an end iterator but is allowed to have a type that is not an iterator type.
 By overriding the equality operator between a sentinel and iterator, it is possible to check whether an iterator is at the end of a range without knowing the position of the last element in the range.
-Presumably, view adaptors like `take_while(lambda)` allow you to specify this comparison function directly.
+Presumably, view adaptors like `take_while` allow you to specify this comparison function directly.
 
 One last note.
 If you write code using range-v3 you may find that the compiler's error messages are difficult to understand.
 One reason for this is because ranges-v3 emulates concepts through a mixture of macros and template metaprogramming.
-So when things fail, the error messages have to do with things deep in the library's implementation.
+So when things fail, the error messages have to do with things deep in the emulation's implementation.
 Hopefully std::ranges will be able to make use of non-emulated concepts to fail in a more graceful way.
 
 In sum, I think ranges are a very nice addition to the standard library. I hope these examples helped you get a feel for what can be done with ranges and how you might use ranges to improve your own code.
@@ -125,7 +125,7 @@ Here are a few links I found useful while learning about ranges.
 
 
 
-<h1>Extra Stuff</h1>
+------------- Possible additions to the post -------------
 
 
 I did not add this example since I am not sure it is a fair comparison.
