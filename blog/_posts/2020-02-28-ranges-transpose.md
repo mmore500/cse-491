@@ -79,10 +79,9 @@ print2D(transpose(W));
 ```
 The inner lambda captures by value because it does not execute until after the rng variable has been destroyed.
 
-Unfortunately, this does not compile. Clang gives errors that suggest `flat` does not satisfy the range concept.
+Unfortunately, this does not compile. Clang gives errors that suggest `flat` does not satisfy the range concept. We can check this directly using a static_assert in the lambda.i
 ```cpp
-const auto bug = ints(0,10) | chunk(2) | join;
-static_assert(!rs::range<decltype(bug)>, "i compile");
+static_assert(!rs::range<decltype(flat)>, "i compile");
 ```
 After some searching I found that the problem is solved by marking the lambda as mutable. Adding the mutable specification causes the lambda to capture as non-const (the default for capture by value is const). I think the compilation error has something to do with join returning an "input_range". An input_range is a type of range that can be iterated over <em>at least</em> once. If we had a const view over an input_range, and the range could be iterated over only a finite number of times, then how would the const view keep track of how many times it has been iterated over? It must keep some internal state and therefore cannot be declared const. This is not much more than a guess though since I have not dived too deep into the library implementation and the documentation is sparse.
 
