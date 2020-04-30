@@ -44,7 +44,7 @@ public:
     double getTotalReturn();
 };
 ```
-The key data member in this class is the stock portfolio which consists of a vector of stock position structs. Each stock position consists of a stock symbol, the current value of a share of that stock, the number of shares owned, and the average cost paid for each stock. Modeling a stock portfolio as a list of stock position models is a very intuitive way to structure the code. **However, performing computations on this data structure requires looping through the stock portfolio and accessing the memory chunk for each stock position, even when the computation only needs a small piece of information about each stock position. **
+The key data member in this class is the stock portfolio which consists of a vector of stock position structs. Each stock position consists of a stock symbol, the current value of a share of that stock, the number of shares owned, and the average cost paid for each stock. Modeling a stock portfolio as a list of stock position models is a very intuitive way to structure the code. **However, performing computations on this data structure requires looping through the stock portfolio and accessing the memory chunk for each stock position, even when the computation only needs a small piece of information about each stock position.**
 
 Alternatively, a **data-oriented design** of a stock portfolio system might look something like this:  
 ```cpp
@@ -67,7 +67,7 @@ public:
 };
 
 ```
-The key difference here is that rather than using an **array of structures (AoS)** like we had in the first example, this class uses a **structure of arrays (SoA)** to store all the data associated with the stock portfolio. This allows us to perform computations that iterate over arrays of smaller data members which can be more efficiently cached. **This can significantly boost the speed of the application in which this class is implemented. **
+The key difference here is that rather than using an **array of structures (AoS)** like we had in the first example, this class uses a **structure of arrays (SoA)** to store all the data associated with the stock portfolio. This allows us to perform computations that iterate over arrays of smaller data members which can be more efficiently cached. **This can significantly boost the speed of the application in which this class is implemented.**
 
 An implementation of computational methods in the **object-oriented** version might look like this:
 ```cpp
