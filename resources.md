@@ -8,6 +8,7 @@ description: Class resources
 
 * [Quick C++ Benchmark](http://quick-bench.com/)
 * [Compiler Explorer](https://godbolt.org/)
+* [C++ Insights](https://cppinsights.io)
 * [cppreference.com](https://cppreference.com/)
 * Anthony Calandra's [list of modern C++ features, with examples](https://github.com/AnthonyCalandra/modern-cpp-features)
 * the current [ISOC++ Working Draft](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/n4778.pdf)
