@@ -5,6 +5,8 @@ date: 2020-03-05
 author: Sean Kennedy
 ---
 
+*A version of this post has been published by [The Startup](https://medium.com/swlh) on [Medium](https://medium.com), which you can read [here](https://medium.com/swlh/prioritizing-data-oriented-design-paradigms-in-your-code-ddb75a79ac18).*
+
 When software developers consider what “good” software design looks like, most minds instinctually wander toward some model of **object-oriented programming (OOP)**. 
 
 We lean so heavily on this paradigm not only because most of us were taught this way, but also because an object-oriented approach—**structuring code based on objects in our perceived model of the real world**—is generally a very good way of designing software. **Encapsulation, abstraction, inheritance, and polymorphism** are four very important principles in software design that work nicely within the object-oriented paradigm while providing high levels of **code reusability** and **maintainability**. The merits of object-oriented programming are numerous and well documented, so much so that I am going to assume that the reader is already familiar with them on some level. 
