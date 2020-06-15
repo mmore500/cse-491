@@ -259,3 +259,9 @@ instance Monoid a => Monoid (Maybe a) where    -- "When a is a Monoid, so is May
 To use this with my C++ approach would require declaring the concept, then providing the instance for `std::optional`, then defining the concept. Concepts cannot be forward-declared, so this as well is impossible.
 
 Overall, I'm quite disappointed with concepts. I wanted to use them to port [Parsec](https://hackage.haskell.org/package/parsec) to C++, but that's tabled indefinitely until I can figure out a sensible way to deal with monads.
+
+## Comments? Questions?
+
+Jump on the twitter thread below to chat!! ☎️ ☎️ ☎️
+
+<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">Brian Rago pieced together a fascinating (and harrowing!) <a href="https://twitter.com/hashtag/templatemetaprogramming?src=hash&amp;ref_src=twsrc%5Etfw">#templatemetaprogramming</a> journey in pursuit of functional programming ends<a href="https://t.co/YXZcF0ogGK">https://t.co/YXZcF0ogGK</a></p>&mdash; Matthew A Moreno (@MorenoMatthewA) <a href="https://twitter.com/MorenoMatthewA/status/1272329718189064192?ref_src=twsrc%5Etfw">June 15, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
