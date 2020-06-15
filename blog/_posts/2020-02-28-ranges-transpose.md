@@ -144,3 +144,9 @@ Here are a few links I found useful while learning about ranges.
   * [The Surprising Limitations of C++ Ranges Beyond Trivial Cases](https://www.fluentcpp.com/2019/09/13/the-surprising-limitations-of-c-ranges-beyond-trivial-use-cases/)
   * [C++20: The Ranges Library](https://www.modernescpp.com/index.php/c-20-the-ranges-library)
   * [The Range-v3 User Manual](https://ericniebler.github.io/range-v3/)
+  
+## Comments? Questions?
+
+Jump on the twitter thread below to chat!! ☎️ ☎️ ☎️
+
+<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">Bradley Bauer wrote up some demos of matrix operations using the ranges-v3 library (which is moving into the stl with <a href="https://twitter.com/hashtag/cpp20?src=hash&amp;ref_src=twsrc%5Etfw">#cpp20</a><a href="https://t.co/D7d7NjLVRG">https://t.co/D7d7NjLVRG</a></p>&mdash; Matthew A Moreno (@MorenoMatthewA) <a href="https://twitter.com/MorenoMatthewA/status/1272329715261440000?ref_src=twsrc%5Etfw">June 15, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
