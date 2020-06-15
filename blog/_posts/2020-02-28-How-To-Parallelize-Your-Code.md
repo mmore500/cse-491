@@ -90,3 +90,9 @@ We do this by handling all options.  We compute all four sums for all four cases
 ![code flow 4]({{ site.baseurl }}/assets/schmi710/491img5.png)
 
 And now we’re done.  That was parallelizing your algorithm 101.
+
+## Comments? Questions?
+
+Jump on the twitter thread below to chat!! ☎️ ☎️ ☎️
+
+<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">Jamie Schmidt wrote an example-driven primer to <a href="https://twitter.com/hashtag/parallelizing?src=hash&amp;ref_src=twsrc%5Etfw">#parallelizing</a> <a href="https://twitter.com/hashtag/cpp?src=hash&amp;ref_src=twsrc%5Etfw">#cpp</a> code (complete w/ the biggest flow chart you ever did see)<a href="https://t.co/q2A7SxRm5k">https://t.co/q2A7SxRm5k</a></p>&mdash; Matthew A Moreno (@MorenoMatthewA) <a href="https://twitter.com/MorenoMatthewA/status/1272329719413792768?ref_src=twsrc%5Etfw">June 15, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
