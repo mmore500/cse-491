@@ -140,3 +140,8 @@ Being conscientious of data-oriented design may or may not radically change the 
 - [CppCon 2018: Stoyan Nikolov “OOP Is Dead, Long Live Data-oriented Design”](https://www.youtube.com/watch?v=yy8jQgmhbAU)
 - [CppCon 2019: Matt Godbolt “Path Tracing Three Ways: A Study of C++ Style”](https://www.youtube.com/watch?v=HG6c4Kwbv4I)
 
+## Comments? Questions?
+
+Jump on the twitter thread below to chat!! ☎️ ☎️ ☎️
+
+<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">Sean Kennedy laid out an example-based introduction to (the often nebulous) <a href="https://twitter.com/hashtag/dataorienteddesign?src=hash&amp;ref_src=twsrc%5Etfw">#dataorienteddesign</a> paradigm<a href="https://t.co/DHYiHH7BRE">https://t.co/DHYiHH7BRE</a><br><br>(also appears on The Startup blog on Medium... congrats Sean!)<a href="https://t.co/eppSZtGDU8">https://t.co/eppSZtGDU8</a></p>&mdash; Matthew A Moreno (@MorenoMatthewA) <a href="https://twitter.com/MorenoMatthewA/status/1272329716729475072?ref_src=twsrc%5Etfw">June 15, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
