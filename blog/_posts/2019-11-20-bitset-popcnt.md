@@ -110,4 +110,4 @@ Comments? Questions?
 
 I started a twitter thread (right below) so we can chat!! ☎️ ☎️ ☎️
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">nothing to see here, just a placeholder tweet 🐦</p>&mdash; Matthew A Moreno (@MorenoMatthewA) <a href="https://twitter.com/MorenoMatthewA/status/1054071480512843776?ref_src=twsrc%5Etfw">October 21, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">&amp; of course I threw my hat in the ring to share how the -mmsse4.2 flag can help you compile down your std::bitset operations to a single machine-level instruction 🤦 🤷<a href="https://t.co/HWGyaT5Dpo">https://t.co/HWGyaT5Dpo</a></p>&mdash; Matthew A Moreno (@MorenoMatthewA) <a href="https://twitter.com/MorenoMatthewA/status/1272329720726564864?ref_src=twsrc%5Etfw">June 15, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
